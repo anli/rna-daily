@@ -17,6 +17,7 @@ module.exports = {
           '.json',
         ],
         alias: {
+          '@storybook-ui': './src/storybook',
           '@navigation': './src/navigation',
           '@screens': './src/screens',
         },
