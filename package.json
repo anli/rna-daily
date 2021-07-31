@@ -58,6 +58,7 @@
   },
   "jest": {
     "coveragePathIgnorePatterns": [
+      ".stories.",
       "<rootDir>/src/storybook/"
     ],
     "setupFilesAfterEnv": [
@@ -89,7 +90,7 @@
   "config": {
     "react-native-storybook-loader": {
       "searchDir": [
-        "./src/storybook"
+        "./base"
       ],
       "pattern": "**/*.stories.*",
       "outputFile": "./src/storybook/story-loader.js"
