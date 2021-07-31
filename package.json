@@ -86,13 +86,13 @@
       "node"
     ]
   },
-  "config": {
-    "react-native-storybook-loader": {
-      "searchDir": [
-        "./src/storybook"
-      ],
-      "pattern": "**/*.stories.*",
-      "outputFile": "./src/storybook/story-loader.js"
-    }
+"config": {
+  "react-native-storybook-loader": {
+    "searchDir": [
+      "./base"
+    ],
+    "pattern": "**/*.stories.*",
+    "outputFile": "./src/storybook/story-loader.js"
   }
+}
 }
