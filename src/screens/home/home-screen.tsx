@@ -1,12 +1,17 @@
 import {StackNavigationOptions} from '@react-navigation/stack';
 import React from 'react';
-import {Text, View} from 'react-native';
+import {SafeAreaView, Text, View} from 'react-native';
+import {Button} from 'react-native-paper';
 
 const Component = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>App</Text>
-    </View>
+
+      <View style={{display: 'flex', flexDirection: 'row'}}>
+        <Button mode="contained">Create Goal</Button>
+      </View>
+    </SafeAreaView>
   );
 };
 

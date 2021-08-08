@@ -2,6 +2,7 @@ import {navigationRef, rootNavigate, RootNavigator} from '@navigation';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import DevMenu from 'react-native-dev-menu';
+import {Provider as PaperProvider} from 'react-native-paper';
 
 /* istanbul ignore next */
 if (__DEV__) {
@@ -15,8 +16,10 @@ if (__DEV__) {
 
 export const App = () => {
   return (
-    <NavigationContainer ref={navigationRef}>
-      <RootNavigator />
-    </NavigationContainer>
+    <PaperProvider>
+      <NavigationContainer ref={navigationRef}>
+        <RootNavigator />
+      </NavigationContainer>
+    </PaperProvider>
   );
 };
