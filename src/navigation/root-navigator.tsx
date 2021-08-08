@@ -1,5 +1,5 @@
 import {createStackNavigator} from '@react-navigation/stack';
-import {HomeScreen} from '@screens';
+import {GoalCreateScreen, HomeScreen} from '@screens';
 import {StorybookScreen} from '@storybook-ui';
 import React from 'react';
 
@@ -12,6 +12,11 @@ export const RootNavigator = () => {
         name="Home"
         component={HomeScreen.Component}
         options={HomeScreen.options}
+      />
+      <Stack.Screen
+        name="GoalCreate"
+        component={GoalCreateScreen.Component}
+        options={GoalCreateScreen.options}
       />
       <Stack.Screen
         name="Storybook"
