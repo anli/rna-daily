@@ -1,7 +1,6 @@
 import {StackNavigationOptions} from '@react-navigation/stack';
-import {Screen} from '@ui';
+import {Screen, Text, View} from '@ui';
 import React from 'react';
-import {Text, View} from 'react-native';
 import {Button} from 'react-native-paper';
 
 const Component = () => {
@@ -9,7 +8,7 @@ const Component = () => {
     <Screen>
       <Text>App</Text>
 
-      <View style={{display: 'flex', flexDirection: 'row'}}>
+      <View flexDirection="row">
         <Button mode="contained">Create Goal</Button>
       </View>
     </Screen>
