@@ -1,12 +1,19 @@
 import {StackNavigationOptions} from '@react-navigation/stack';
+import {Screen} from '@team-anli/base.ui.screen';
+import {Text} from '@team-anli/base.ui.text';
+import {View} from '@team-anli/base.ui.view';
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Button} from 'react-native-paper';
 
 const Component = () => {
   return (
-    <View>
+    <Screen>
       <Text>App</Text>
-    </View>
+
+      <View flexDirection="row">
+        <Button mode="contained">Create Goal</Button>
+      </View>
+    </Screen>
   );
 };
 

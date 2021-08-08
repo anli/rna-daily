@@ -1,8 +1,4 @@
-import React, {FC} from 'react';
-import {Text as NativeText, TextProps as NativeTextProps} from 'react-native';
+import {createText} from '@shopify/restyle';
+import {Theme} from '@team-anli/base.themes';
 
-export type TextProps = NativeTextProps;
-
-export const Text: FC<TextProps> = ({children, ...props}) => {
-  return <NativeText {...props}>{children}</NativeText>;
-};
+export const Text = createText<Theme>();

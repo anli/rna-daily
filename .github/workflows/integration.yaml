@@ -18,6 +18,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - uses: actions/setup-node@v2
+      - name: Setup
+        run: |
+          npm config set '@team-anli:registry' https://node.bit.dev
       - name: Install node modules
         run: |
           npm ci
