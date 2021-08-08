@@ -1,5 +1,7 @@
 import {navigationRef, rootNavigate, RootNavigator} from '@navigation';
 import {NavigationContainer} from '@react-navigation/native';
+import {ThemeProvider} from '@shopify/restyle';
+import {theme} from '@themes';
 import React from 'react';
 import DevMenu from 'react-native-dev-menu';
 import {Provider as PaperProvider} from 'react-native-paper';
@@ -16,10 +18,12 @@ if (__DEV__) {
 
 export const App = () => {
   return (
-    <PaperProvider>
-      <NavigationContainer ref={navigationRef}>
-        <RootNavigator />
-      </NavigationContainer>
-    </PaperProvider>
+    <ThemeProvider theme={theme}>
+      <PaperProvider>
+        <NavigationContainer ref={navigationRef}>
+          <RootNavigator />
+        </NavigationContainer>
+      </PaperProvider>
+    </ThemeProvider>
   );
 };
