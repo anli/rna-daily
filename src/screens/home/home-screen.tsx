@@ -1,5 +1,7 @@
 import {StackNavigationOptions} from '@react-navigation/stack';
-import {Screen, Text, View} from '@ui';
+import {Screen} from '@team-anli/base.ui.screen';
+import {Text} from '@team-anli/base.ui.text';
+import {View} from '@team-anli/base.ui.view';
 import React from 'react';
 import {Button} from 'react-native-paper';
 

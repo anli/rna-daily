@@ -9,7 +9,7 @@ import {
   SpacingProps,
   VariantProps,
 } from '@shopify/restyle';
-import {Theme} from '@themes';
+import {Theme} from '@team-anli/base.themes';
 import React from 'react';
 import {SafeAreaView} from 'react-native';
 

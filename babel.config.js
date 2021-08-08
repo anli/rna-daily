@@ -20,8 +20,6 @@ module.exports = {
           '@navigation': './src/navigation',
           '@screens': './src/screens',
           '@storybook-ui': './src/storybook',
-          '@themes': './src/themes',
-          '@ui': './src/ui',
         },
       },
     ],
